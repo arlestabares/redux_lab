@@ -16,7 +16,7 @@ import '../features/dashboard/redux/dashboard_reducer.dart';
 AppState rootReducer(AppState state, dynamic action) {
   return AppState(
     counter: counterReducer(state.counter, action),
-    isAuthenticated: authReducer(state.isAuthenticated, action),
+    auth: authReducer(state.auth, action),
     dashboardMessage: dashboardReducer(state.dashboardMessage, action),
   );
 }
