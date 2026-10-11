@@ -37,6 +37,7 @@ dependencies:
   flutter_redux: ^0.10.0
   redux: ^5.0.0
   equatable: ^3.0.0
+  get_it: ^9.3.0
 
 dev_dependencies:
   flutter_test:
