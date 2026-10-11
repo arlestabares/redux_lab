@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // import '../features/counter/presentation/counter_page.dart';
-import '../features/counter/presentation/counter_page3.dart';
+import '../features/counter/presentation/counter_page.dart';
 
 class ReduxEnterpriseLabApp extends StatelessWidget {
   const new({super.key});
@@ -15,7 +15,7 @@ class ReduxEnterpriseLabApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
         useMaterial3: true,
       ),
-      home: CounterPage3(),
+      home: CounterPage(),
       // routes: {'/counter': (context) => CounterPage()},
     );
   }
