@@ -9,10 +9,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:redux_enterprise_lab/app/redux_enterprise_lab_app.dart';
+import 'package:redux_enterprise_lab/core/di/service_locator.dart';
 import 'package:redux_enterprise_lab/features/counter/redux/app_state.dart';
 import 'package:redux_enterprise_lab/features/counter/redux/store_factory.dart';
 
 void main() {
+  setUp(() async {
+    // Limpiamos GetIt para empezar cada test n un contenedor limpio.
+    await sl.reset();
+
+    // Registramos las dependencias que necesita el test
+    setupDependencies();
+  });
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(

@@ -3,14 +3,15 @@ import 'package:redux_enterprise_lab/features/counter/redux/app_state.dart';
 import 'package:redux_enterprise_lab/redux/middleware/auth_middleware.dart';
 import 'package:redux_enterprise_lab/redux/root_reducer.dart';
 
+import '../../../core/di/service_locator.dart';
 import '../../auth/data/fake_auth_repository.dart';
 
-///
+/// Compone el Store y sus middleware.
 /// Antes utilizábamos [Store<int>]. Ahora utilizamos [Store<AppState>].
 /// Esta diferencia es fundamental: el Store administra el árbol de estado completo, no solamente el contador.
 
 Store<AppState> createAppStore() {
-  final repository = FakeAuthRepository();
+  final repository = sl<FakeAuthRepository>();
   return Store<AppState>(
     rootReducer,
     initialState: const AppState(),
