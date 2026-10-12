@@ -2,9 +2,9 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:redux_enterprise_lab/features/auth/redux/auth_actions.dart';
 import 'package:redux_enterprise_lab/features/auth/redux/auth_state.dart';
-import 'package:redux_enterprise_lab/features/counter/redux/app_state.dart';
 import 'package:redux_enterprise_lab/features/counter/redux/counter_actions.dart';
 import 'package:redux_enterprise_lab/features/dashboard/redux/dashboard_actions.dart';
+import 'package:redux_enterprise_lab/redux/app_state.dart';
 import 'package:redux_enterprise_lab/redux/root_reducer.dart';
 
 void main() {

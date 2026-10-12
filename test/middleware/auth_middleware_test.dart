@@ -5,7 +5,7 @@ import 'package:redux/redux.dart';
 import 'package:redux_enterprise_lab/features/auth/data/fake_auth_repository.dart';
 import 'package:redux_enterprise_lab/features/auth/redux/auth_actions.dart';
 import 'package:redux_enterprise_lab/features/auth/redux/auth_state.dart';
-import 'package:redux_enterprise_lab/features/counter/redux/app_state.dart';
+import 'package:redux_enterprise_lab/redux/app_state.dart';
 import 'package:redux_enterprise_lab/redux/middleware/auth_middleware.dart';
 import 'package:redux_enterprise_lab/redux/root_reducer.dart';
 

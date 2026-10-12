@@ -1,9 +1,9 @@
 import 'package:redux/redux.dart';
-import 'package:redux_enterprise_lab/features/counter/redux/app_state.dart';
 import 'package:redux_enterprise_lab/redux/middleware/auth_middleware.dart';
 import 'package:redux_enterprise_lab/redux/root_reducer.dart';
 
 import '../../../core/di/service_locator.dart';
+import '../../../redux/app_state.dart';
 import '../../auth/data/fake_auth_repository.dart';
 
 /// Compone el Store y sus middleware.

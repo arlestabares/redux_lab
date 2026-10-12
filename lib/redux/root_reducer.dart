@@ -1,7 +1,7 @@
 import '../features/auth/redux/auth_reducer.dart';
-import '../features/counter/redux/app_state.dart';
 import '../features/counter/redux/counter_reducer.dart';
 import '../features/dashboard/redux/dashboard_reducer.dart';
+import 'app_state.dart';
 
 ///
 /// ¡Aquí está el corazón de la nueva arquitectura!

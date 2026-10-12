@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../features/counter/presentation/counter_page.dart';
 
 class ReduxEnterpriseLabApp extends StatelessWidget {
-  const new({super.key});
+  const ReduxEnterpriseLabApp({super.key});
 
   @override
   Widget build(BuildContext context) {

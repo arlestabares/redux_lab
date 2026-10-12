@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:redux/redux.dart';
-import 'package:redux_enterprise_lab/features/counter/redux/app_state.dart';
 
 import '../../features/auth/data/fake_auth_repository.dart';
 import '../../features/auth/redux/auth_actions.dart';
+import '../app_state.dart';
 
 Middleware<AppState> createAuthMiddleware(FakeAuthRepository repository) {
   return (store, action, next) {

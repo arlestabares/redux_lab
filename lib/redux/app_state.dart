@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-import '../../auth/redux/auth_state.dart';
+import '../features/auth/redux/auth_state.dart';
 
 class AppState extends Equatable {
   final int counter;

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 
+import '../../../redux/app_state.dart';
 import '../../auth/redux/auth_actions.dart';
 import '../../auth/redux/auth_state.dart';
 import '../../counter/redux/counter_actions.dart';
 import '../../dashboard/redux/dashboard_actions.dart';
-import '../redux/app_state.dart';
 
 class CounterPage extends StatefulWidget {
   const CounterPage({super.key});
